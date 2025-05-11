@@ -2,10 +2,11 @@ import '../styles.css';
 
 function NavBar({ setModo }) {
   const buttons = [
+    { mode: 'listar', label: 'Listar', className: 'nav-btn-info' },
     { mode: 'ingresar', label: 'Ingresar', className: 'nav-btn-primary' },
     { mode: 'actualizar', label: 'Actualizar', className: 'nav-btn-warning' },
-    { mode: 'eliminar', label: 'Eliminar', className: 'nav-btn-danger' },
-    { mode: 'listar', label: 'Listar', className: 'nav-btn-info' }
+    { mode: 'eliminar', label: 'Eliminar', className: 'nav-btn-danger' }
+    
   ];
 
   return (

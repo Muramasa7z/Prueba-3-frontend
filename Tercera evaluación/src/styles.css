@@ -28,7 +28,7 @@ body {
   overflow: hidden;
 }
 
-/* Header y banner */
+/* Todo Banner */
 .banner {
   width: 100%;
   padding: 1rem 0;
@@ -55,7 +55,7 @@ body {
   display: block;
 }
 
-/* Navbar */
+/* La Navbar */
 .navbar {
   display: flex;
   flex-direction: row;
@@ -103,7 +103,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Contenido principal */
+/* Contenido principal para que el contenedor flex "padre" use el espacio disponible y padding de 2rem*/
 .main-content {
   flex: 1;
   padding: 2rem;

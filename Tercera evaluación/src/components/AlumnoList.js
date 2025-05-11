@@ -3,7 +3,7 @@ function AlumnoList({ alumnos }) {
     <div className="alumno-list">
       <h3>Listado de Alumnos</h3>
       {alumnos.length === 0 ? (
-        <p className="empty-message">No hay alumnos registrados</p>
+        <p className="empty-message">No hay alumnos registrados ⚠️ Registrar mediante botón de "Ingresar"</p>
       ) : (
         <ul>
           {alumnos.map((alumno, index) => (

@@ -12,19 +12,19 @@ function App() {
 
   const [modo, setModo] = useState('listar');
 
-  useEffect(() => {
+  useEffect(() => {                                                // Guarda los cambios en alumnos en localStorage cada vez que se actualiza
     localStorage.setItem('alumnos', JSON.stringify(alumnos));
   }, [alumnos]);
 
-  const agregarAlumno = (alumno) => {
+  const agregarAlumno = (alumno) => {                  // Función para agregar un alumno a la lista
     setAlumnos([...alumnos, alumno]);
   };
 
-  const actualizarAlumno = (nombreActual, nuevoAlumno) => {
+  const actualizarAlumno = (nombreActual, nuevoAlumno) => {                // Función para actualizar un alumno existente
     setAlumnos(alumnos.map(a => a.nombre === nombreActual ? nuevoAlumno : a));
   };
 
-  const eliminarAlumno = (nombre) => {
+  const eliminarAlumno = (nombre) => {      // Función para eliminar un alumno por nombre
     setAlumnos(alumnos.filter(a => a.nombre !== nombre));
   };
 

@@ -9,7 +9,6 @@ function Banner() {
           src={bannerImage}
           alt="Sistema de Gestión Académica" 
           className="banner-image"
-          loading="lazy"
         />
       </div>
     </div>
